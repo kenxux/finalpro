@@ -1,0 +1,387 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/bg-image.png') no-repeat center center fixed; /* Correct path to the image */
+    background-size: cover; /* Cover the entire screen */
+}
+
+.login-container {
+    width: 300px; /* Set a fixed width for the login form */
+    height: auto; /* Allow the height to be dynamic based on content (optional) */
+    margin: auto; /* Center the login form horizontally */
+    padding: 20px; /* Padding inside the form */
+    
+    /* Added properties to center vertically */
+    position: absolute; /* Use absolute positioning for centering */
+    top: 50%; /* Move the top edge to the middle of the screen */
+    left: 50%; /* Move the left edge to the middle of the screen */
+    transform: translate(-50%, -50%); /* Shift the container back by half its height and width to truly center it */
+    
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+ /* Style for the button in the login form */
+button {
+    width: 100%; /* Make the button take the full width of the container */
+    padding: 10px; /* Padding inside the button */
+    background-color: #4CAF50; /* Set the background color (green) */
+    border: none; /* Remove default border */
+    color: brown; /* Set text color to white */
+    font-size: 26px; /* Font size for the button text */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+    
+}
+h1{
+    font-weight: bolder;
+    top:150px;
+    margin-left:100px;
+    color: orange;
+}
+span{
+    color: brown;
+}
+h2{
+    margin-top: 0;
+}
+
+/* Additional styles for the Admin Dashboard */
+.dashboard-container {
+    display: flex; /* Use flexbox for layout */
+    height: 100vh; /* Full height of the viewport */
+}
+/* sidebar*/
+ .sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    position: relative;
+    height: 100%;
+    transition: width 0.5s ease;
+    padding: 10px;
+    margin-top: -25px;
+    margin-left:-5px ;
+    background-color: gray;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar.collapsed {
+    width: 50px; /* Reduced width for icon-only view */
+}
+
+.sidebar .profile-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-info h2 {
+    font-size: 5px;
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+/* Sidebar navigation tabs */
+.nav-tabs {
+    display: flex;
+    padding: 5px 5px;
+    transition: padding 0.3s ease;
+    cursor: pointer; /* Add pointer cursor */
+    color: white;
+    margin-top: 6px;
+}
+nav a .logout-button{
+    margin-top: -20px;
+}
+
+.nav-tabs i {
+    margin-right: 10px; /* Space between icon and text */
+}
+.main-content i{
+    font-size: 50px !important;
+    justify-content: center !important;
+}
+.sidebar.collapsed .nav-tabs span {
+    display: none; /* Hide text when collapsed */
+}
+
+/* Toggle button and title in a flex container */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle button styling */
+.toggle-btn {
+    cursor: pointer;
+    padding: 5px;
+    color: #fff;
+    border: none;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+/* Adjusted dashboard content */
+.dashboard-container {
+    margin-left: -18px;
+    padding: 20px;
+}
+
+.dashboard-container.collapsed {
+    margin-left: 80px; /* Adjust content margin when sidebar is collapsed */
+}
+.sidebar span{
+    color: white;
+}
+.sidebar span:hover{
+    color:aqua;
+}
+.dashboard-container.collapsed.logout-button{
+    background-color: gray;
+    color: orangered;
+    margin-left: -50px;
+}
+/* Updated styles for the main content */
+.main-content {
+    flex: 1; /* Take up the remaining space */
+    margin: -100;
+}
+
+
+
+
+
+
+
+.content-section {
+    width: 75%; /* Set the width to 200px */
+    height: 68%; /* Set the height to 100px */
+    background-color: white; /* Set background color to white */
+    border: 5px solid #ccc; /* Add a light gray border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: flex; /* Use flexbox for centering content */
+    align-items: center; /* Center content vertically */
+    justify-content:center; /* Center content horizontally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin: 150px;
+}
+.content-section i{
+    align-items: center; /* Center content vertically */
+    justify-content:center; /* Center content horizontally */
+    padding-right: 30px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.dashboard-menu {
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0; /* Remove padding from the list */
+    margin: 0; /* Remove margin from the list */
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-info {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    flex-direction: column; /* Ensure items are stacked vertically (image above name) */
+    padding: 10px; /* Add some padding */
+    font-size: 5px;
+}
+
+.profile-info img {    
+    width: 50px; /* Set the width of the profile picture */
+    height: 50px; /* Set the height of the profile picture */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #ccc; /* Optional: Add a border to the image */
+}
+/* Green dot to show active status */
+.active-dot {
+    width: 5px; /* Size of the green dot */
+    height: 5px; /* Size of the green dot */
+    background-color: #28a745; /* Green color */
+    border-radius: 50%; /* Make the dot circular */
+    display: inline-block; /* Ensure the dot is inline */
+    margin-right: 5px; /* Space between the dot and the username */
+    border: 2px solid #fff; /* Add a white border around the dot */
+}
+.profile-info h2 {
+    font-size: 15px; /* Set the font size for the username */
+    color:orange; /* Set a color for the username text */
+    margin: 0px; /* Remove margin to align properly with the image */
+
+}
+.dashboard-menu {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+}
+.dashboard-menu li a {
+    padding: 5px; /* Padding inside the links */
+    display: block; /* Make links block-level */
+    background-color: none; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underlines */
+    text-transform:uppercase;
+    font-weight: bolder;
+}
+
+
+/* Logout button styling */
+.logout-button {
+    display: block; /* Make logout button take full width */
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+.main-content .dashboard-menu {
+    display: flex; /* Use flexbox for layout */
+    list-style: none; /* Remove bullet points */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.main-content .dashboard-menu li {
+    margin: 2cqmin; /* Space between items */
+    text-align: center; /* Center align the icon and text */
+    flex: 0 0 18%; /* Each item takes up 18% of the row width */
+}
+
+.main-content .dashboard-menu li a {
+    padding: 15px; /* Increase padding for larger clickable area */
+    font-size: 30px; /* Increase icon size */
+    color: blue; /* Icon color */
+    text-decoration: none; /* Remove underlines */
+
+}
+
+.main-content .dashboard-menu li a:hover {
+    color: orangered; /* Change color on hover */
+
+}
+
+.main-content .dashboard-menu li a:hover::after {
+    opacity: 0; /* Show the tooltip on hover */
+}
+.nav-tabs {
+    display: block; /* Display tabs inline */
+    cursor: pointer; /* Pointer cursor for tabs */
+    padding: 5px; /* Padding inside the links */
+    background-color: none; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underlines */
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.nav-tabs:hover{
+    background-color: green;
+    color:aqua;
+}
+.content-section {
+    display: none; /* Initially hide all content sections */
+    margin-top: 5px; /* Space above the content sections */ 
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: blue;
+}
+.active {
+    display: block; /* Show active section */
+}
+/* Make the Dashboard visible by default */
+#content-dashboard {
+    display: block;
+}
+.dashboard-menu li a i{
+    font-size: 20px;
+}
+title{
+    color: orangered;
+}
+a[data-title] {
+position: relative;
+}
+
+a[data-title]::before {
+content: attr(data-title); /* Use the data-title attribute */
+position: absolute;
+bottom: 75%; /* Position it above the element */
+left: 50%;
+transform: translateX(-50%);
+background-color: orangered; /* Background color */
+color: white; /* Text color */
+padding: 5px 10px; /* Padding inside the tooltip */
+border-radius: 5px; /* Rounded corners */
+white-space: nowrap; /* Prevent line breaks */
+font-weight: bold;
+font-size: 14px;
+opacity: 0; /* Initially hidden */
+pointer-events: none; /* Avoid mouse interaction */
+transition: opacity 0.2s ease-in-out;
+border: none; /* Remove borders */
+}
+
+a[data-title]:hover::before {
+opacity: 1; /* Show tooltip on hover */
+}
+
+
+
+
+
+
+.footer {
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -250px;
+    background-color:aqua;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: orangered;
+    margin:0;
+
+}
